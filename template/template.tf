@@ -26,9 +26,9 @@ provider "azurerm" {
 # terraform import module.custom_role.azurerm_role_definition.role[`"Suncor`"] "/subscriptions/1399782e-5c68-48d7-9af5-80d3f34887c5/providers/Microsoft.Authorization/roleDefinitions/34e329a0-18e8-4927-897b-45372443b66f|/providers/Microsoft.Management/managementGroups/Suncor"
 
 module "custom_role" {
-  source = "git::https://github.com/SEApplicationsOrg/cca-terraform-cloud-modules.git//modules/azurerm/custom_role?ref=main"
+  source = "git::https://github.com/majazbaig/cloudmodules/blob/main/azurerm/custom_role/main.tf"
 
-  environment = "non-prd" # <<< non-prd >>> or <<< prd >>>
+  environment = "test" # <<< non-prd >>> or <<< prd >>>
   name        = "<<< NAME >>>"
   description = "<<< DESCRIPTION >>>"
 
