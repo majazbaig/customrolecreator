@@ -8,11 +8,11 @@ terraform {
 
   backend "azurerm" {
     use_azuread_auth     = true
-    tenant_id            = "1aa51068-11a6-4bd2-8646-1fff31a30ffc"
-    subscription_id      = "c415313f-fb5a-4e67-a8dc-be4e0998a358"
-    resource_group_name  = "iacprdarmrgp003"
-    storage_account_name = "iacprdarmstauw2003"
-    container_name       = "iacprdarmstbuw2003"
+    tenant_id            = "e11839fb-0867-429f-a1a9-c4c627d2e205"
+    subscription_id      = "2fd30c47-5c76-4121-8b39-6dc5938696b9"
+    resource_group_name  = "custom_role_test"
+    storage_account_name = "customrolesta"
+    container_name       = "customroleblob"
     key                  = "CUSTOMROLES/<<< FILE NAME (without .tf)>>>.tfstate"
   }
 }
